@@ -1,5 +1,5 @@
 
-const Recipes = () => {
+const OurRecipes = () => {
     return (
         <div className="mx-20 mt-4 font-lexend">
             <h1 className="text-4xl font-semibold text-center">Our Recipes</h1>
@@ -8,4 +8,4 @@ const Recipes = () => {
     );
 };
 
-export default Recipes;
+export default OurRecipes;

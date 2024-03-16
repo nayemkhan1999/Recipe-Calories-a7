@@ -3,9 +3,11 @@ const SingleProduct = ({ pd, handleClick }) => {
   return (
     <div>
       <div className="h-full border-2 p-5 rounded-lg">
-        <img className="rounded-lg" src={image} alt="" />
+        <img  className="rounded-lg " src={image} alt="" />
+       
         <h1 className="font-bold text-2xl text-center mt-2">{name}</h1>
-        <p className="opacity-50 text-sm">{description}</p>
+        <p className="opacity-50 text-sm divider">{description}</p>
+        <p className="font-bold text-xl mb-2">Ingredients: 6</p>
         <ul
           style={{
             listStyleType: "disc",
@@ -20,7 +22,7 @@ const SingleProduct = ({ pd, handleClick }) => {
           <li>{Ingredients[2]}</li>
           <li>{Ingredients[3]}</li>
         </ul>
-        <div className="flex gap-5 mt-3">
+        <div className="flex gap-8 mt-3">
           <div className="flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
