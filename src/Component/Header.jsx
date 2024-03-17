@@ -1,7 +1,7 @@
 import Rectangle from "../img/Rectangle.png";
 const Header = () => {
   return (
-    <div className="lg:mx-20 mx-5 mt-4 font-lexend">
+    <div className="lg:mx-20 mx-2 mt-4 font-lexend">
 
       <div className=" lg:h-[600px] text-center "
         style={{

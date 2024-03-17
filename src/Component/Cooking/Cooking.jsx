@@ -1,7 +1,7 @@
-const Cooking = ({ recipes, handleRemove, handleCooking,cooking }) => {
+const Cooking = ({ recipes, handleRemove, handleCooking, cooking }) => {
   return (
     <div>
-      <h2 className="text-center font-bold text-2xl">
+      <h2 className="text-center font-bold text-2xl border-b-2 pb-3  font-lexend">
         Want to cook: {recipes.length}
       </h2>
       <div>
@@ -25,11 +25,11 @@ const Cooking = ({ recipes, handleRemove, handleCooking,cooking }) => {
                   <td>{item.calories} calories</td>
                   <td>
                     <button
-                      onClick={()=> {
-                        handleRemove(item.id)
-                        handleCooking(item)
+                      onClick={() => {
+                        handleRemove(item.id);
+                        handleCooking(item);
                       }}
-                      className="bg-primary text-white px-1 text-xs py-2 rounded-full"
+                      className="bg-primary text-white  text-[10px] px-1 py-2 rounded-full"
                     >
                       prepearing
                     </button>
@@ -40,7 +40,7 @@ const Cooking = ({ recipes, handleRemove, handleCooking,cooking }) => {
             </tbody>
           </table>
         </div>
-        <h1 className="text-center font-bold text-2xl">
+        <h1 className="text-center font-bold text-2xl mt-10 border-b-2 pb-3 font-lexend">
           Currently cooking: {cooking.length}
         </h1>
         <div className="overflow-x-auto">
@@ -56,17 +56,14 @@ const Cooking = ({ recipes, handleRemove, handleCooking,cooking }) => {
             </thead>
             <tbody>
               {/* row 1 */}
-                      {
-                        cooking.map((display,index)=>
-                        <tr key={display.ind}>
-                        <th>{index+1}</th>
-                        <td>{display.name}</td>
-                        <td>{display.preparing_time}</td>
-                        <td>{display.calories}</td>
-                      </tr>
-                        )
-                      }
-             
+              {cooking.map((display, index) => (
+                <tr key={display.ind}>
+                  <th>{index + 1}</th>
+                  <td>{display.name}</td>
+                  <td>{display.preparing_time} minutes</td>
+                  <td>{display.calories} calories</td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>

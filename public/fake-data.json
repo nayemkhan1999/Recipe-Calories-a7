@@ -2,7 +2,7 @@
   {
     "id": "1",
     "image": "https://i.ibb.co/BLZMg8D/easy-flexitarian3.jpg",
-    "name": "Spaghetti Carbonara",
+    "name": "Spaghe Carbona",
     "description": "Classic Italian pasta dish with creamy sauce.",
     "ingredients_length": 7,
     "Ingredients": [
@@ -62,7 +62,7 @@
   {
     "id": "5",
     "image": "https://i.ibb.co/41hf3wv/pizza-pepperoni-table.jpg",
-    "name": "Homemade Pizza",
+    "name": "Home made Pizza",
     "description": "Freshly baked pizza with your favorite toppings.",
     "ingredients_length": 7,
     "Ingredients": [

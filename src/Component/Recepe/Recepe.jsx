@@ -2,16 +2,16 @@ const Recepe = ({ cook,handleCook }) => {
   const { image, name, description, Ingredients, preparing_time, calories } =
     cook;
   return (
-    <div>
-      <div className="card card-compact h-full bg-base-100 border-2">
+    <div className="mt-16 font-lexend">
+      <div className="card card-compact h-full w-[380px] bg-base-100 border-2">
         <figure className="p-4">
           <img className="rounded-[20px]" src={image} alt="" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title text-base lg:text-xl font-semibold">
+          <h2 className="card-title text-base lg:text-2xl font-bold">
             {name}
           </h2>
-          <p className="text-xs lg:text-base text-[#878787] firasan">
+          <p className="text-xs lg:text-base text-[#878787] ">
             {description}
           </p>
           <div className="divider"></div>
@@ -32,7 +32,7 @@ const Recepe = ({ cook,handleCook }) => {
           </ul>
           <div className="divider"></div>
           <div className="flex gap-8 mb-4">
-            <div className="flex items-center gap-2 text-sm lg:text-lg font-medium firasan text-[#878787]">
+            <div className="flex items-center gap-2 text-sm lg:text-lg font-medium  text-[#878787]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -49,7 +49,7 @@ const Recepe = ({ cook,handleCook }) => {
               </svg>
               <p>{preparing_time} minutes</p>
             </div>
-            <div className="flex items-center gap-2 text-sm lg:text-lg font-medium firasan text-[#878787]">
+            <div className="flex items-center gap-2 text-sm lg:text-lg font-medium  text-[#878787]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
